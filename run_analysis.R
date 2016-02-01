@@ -54,5 +54,5 @@ data3 <- aggregate(. ~ subject + activity_labels, data = data2, FUN = mean)
 
 
 # Writing the final output in a file.
-write.table(data3, file = "finalOutput.csv", sep = "\t")
+write.table(data3, file = "finalOutput.txt", sep = "\t", row.names = F)
 
